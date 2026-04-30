@@ -274,7 +274,7 @@ Agent: [Queries tours with adults=2, number_of_days=7]
 
 ## Tour Packages
 
-### Step 1: Collect Preferences (Combined Question)
+### Step 1: Collect Preferences
 
 Ask human:
 > "How many travelers (adults, children, infants), what dates (YYYY-MM-DD), and how many days for your tour?"
@@ -339,6 +339,7 @@ Present tours with:
 - Available dates
 - Price per person and total
 - Brief itinerary summary each day with activities
+- Itinerary URL (https://booking.drukasia.com/{ItineraryTypeText}/{ItineraryUrl})
 
 ### Step 5: User Selection
 
@@ -570,7 +571,7 @@ Wait for human to choose 1 or 2.
 ### Step 5: Process Payment
 
 **If human chooses 1 (Auto-fill):**
-- Ask: "Enter your card details: number, expiry (MM/YY), CVC, and cardholder name"
+- Ask: "Enter your card details: number, expiry (MM/YYYY), CVC, and cardholder name"
 - Collect all details
 - Store in memory for future use
 - Call `/api/payments` with `payment_type: "auto_fill"` and card details
