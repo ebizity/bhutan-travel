@@ -12,7 +12,7 @@ metadata:
       env:
         - DRUKASIA_API_KEY
 ---
-API_BASE_URL=https://drukasia-app-api.vercel.app/api
+API_BASE_URL=https://api.drukasia.com/api
 
 ## Authentication Flow
 
